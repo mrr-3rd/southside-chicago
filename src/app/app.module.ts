@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PropertyListingsComponent } from './component/property-listings/property-listings.component';
+import { routing } from "./app.routing";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { PropertyListingsComponent } from './component/property-listings/propert
     PropertyListingsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
