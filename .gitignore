@@ -41,3 +41,4 @@ Thumbs.db
 # API Keys
 **/api/keys/*
 *api-key*
+*.ini
