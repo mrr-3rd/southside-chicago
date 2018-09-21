@@ -38,7 +38,7 @@ Thumbs.db
 *.stackdump
 .ignore/*
 
-# API Keys
+# Enviornment Variables
 **/api/keys/*
 *api-key*
 *.ini
