@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { PropertyListingsComponent } from './component/property-listings/property-listings.component';
 import { routing } from "./app.routing";
 
+import { AngularFireModule } from "@angular/fire";
+
 @NgModule({
   declarations: [
     AppComponent,
