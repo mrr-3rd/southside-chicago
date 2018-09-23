@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { routing } from "./app.routing";
@@ -9,12 +10,9 @@ import { NewPropertyListingComponent } from './component/form/new-property-listi
 import { AngularFireModule } from "@angular/fire";
 import { masterFirebaseConfig } from './api-keys/api-keys';
 
-export const firebaseConfig = {
-  apiKey: masterFirebaseConfig.apiKey,
-  authDomain: masterFirebaseConfig.authDomain,
-  databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
-};
+import { environment, api_keys } from "./.environment/environment";
+export const firebaseConfig = environment.firebaseConfig;
+export const apiKeys = api_keys;
 
 @NgModule({
   declarations: [
@@ -24,7 +22,9 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
