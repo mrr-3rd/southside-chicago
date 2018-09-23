@@ -9,5 +9,5 @@ import * as firebase from 'firebase';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'southside-chicago';
+  title = 'Southside Chicago';
 }
