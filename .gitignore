@@ -40,5 +40,6 @@ Thumbs.db
 
 # Enviornment Variables
 **/api/keys/*
+**/.environment/**
 *api-key*
 *.ini
