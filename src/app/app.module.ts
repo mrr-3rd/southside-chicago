@@ -6,11 +6,13 @@ import { PropertyListingsComponent } from './component/property-listings/propert
 import { routing } from "./app.routing";
 
 import { AngularFireModule } from "@angular/fire";
+import { NewPropertyListingComponent } from './component/form/new-property-listing/new-property-listing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropertyListingsComponent
+    PropertyListingsComponent,
+    NewPropertyListingComponent
   ],
   imports: [
     BrowserModule,
